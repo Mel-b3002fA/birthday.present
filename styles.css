@@ -1,8 +1,74 @@
-.transition-fade{
-    opacity: 1;
-    transition: 500ms;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-html.is-animating .transition-fade{
-    opacity: 0;
+body{
+    background-color: #f1e1d6;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
 }
+
+
+.carousel{
+    width: 60vw;
+    height: 75vh;
+    box-shadow: 10px 10px 10px rgb(16, 29, 78);
+    margin: 5rem auto;
+    overflow: hidden;
+}
+
+.carousel-active{
+    background-image: url(./img/27ADA2AB-AFC2-43A5-8BB4-3B4C12FB5351.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* .carousel-control-prev{
+    background-color: #b6b6b66a;
+    margin-top: 200px;
+    height: 18%;
+    width: 10%;
+}
+.carousel-control-next{
+    background-color: #b6b6b66a;
+    margin-top: 200px;
+    height: 18%;
+    width: 10%;
+} */
+
+carousel-control-next{
+    background-color: rgba(0, 0, 0, 0.387);
+    height: 17%;
+    width: 10%;
+}
+
+.container .wrapper-holder{
+    display: grid;
+    grid-template-columns: repeat(4,100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 20s ease-in-out infinite alternate;
+}
+
+
+h2{
+    font-family: DM Serif Text;
+    font-size: 70px;
+    color: aliceblue;
+    font-weight: 300px;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+p{
+    font-family: Montserrat;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
