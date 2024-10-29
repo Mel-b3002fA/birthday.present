@@ -44,6 +44,19 @@ carousel-control-next{
     width: 10%;
 }
 
+.fire-btn{
+    background-color: #7c101000;
+    color: #7c1010;
+    font-family: ;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 340px;
+    margin-top: 220px;
+    cursor: pointer;
+}
+
+
+
 .container .wrapper-holder{
     display: grid;
     grid-template-columns: repeat(4,100%);
@@ -71,4 +84,6 @@ p{
     margin-left: 150px;
     margin-right: 150px;
 }
+
+
 
