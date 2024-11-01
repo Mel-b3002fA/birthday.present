@@ -42,38 +42,40 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
      <!--    <img src="./img/C6633D6B-2977-43B6-AC7B-C9673052F6DB.png" alt=""> -->
-        <h2>Lieber Vater,</h2>
-        <p>
-           Heute, wo wir deinen Geburtstag feiern, möchte ich Zeit nehmen dir mitzuteilen, wie viel unsere Verbindung mir bedeutet. Auch wenn wir nicht viele Momente unseres Lebens miteinander geteilt haben, 
-           gibt es eine besondere Bindung, die ich tief empfinde und für 
-           die ich dankbar bin.
+        <h2 class="text">Lorem ipsum</h2>
+        <p class="text">
+           dolor sit amet, consectetur adipiscing elit. Integer at diam sed leo pretium elementum. Donec ac augue nibh. Duis blandit nisl non tempus rhoncus. 
         </p>
-
-      </div>
-      <div class="carousel-item slide2">
- <!--        <img src="./img/C6633D6B-2977-43B6-AC7B-C9673052F6DB.png" alt=""> -->
-         <p>Obwohl ich nicht die Zeichenkünste meiner Mutter oder die Erfahrung habe, gab ich mein bestes, um ein Bild zu schaffen, welches dir in meinen Augen ähnlich sieht. Auch wenn du es </p>
-        <p></p>
-      </div>
+    </div>
+      
+    <div class="carousel-item slide2">
+         <p class="slide-para-2 text">Praesent sed ipsum ac odio imperdiet laoreet sed consectetur lectus. Vestibulum vehicula nisl nec mauris auctor fermentum. Fusce luctus tellus quis justo tempor, nec blandit diam fermentum</p>
+        <p class="reveal-para text">Fusce congue lacus in odio <button class="reveal-btn" id="myButton">Button</button>aliquet interdum</p>
+            <div class="portrait">
+                <img src="./img/image 29.png" alt="" width="200px" class="portrait-pic" id="myImg">
+            </div>
+    </div>
+      
       <div class="carousel-item slide3">
-<!--         <img src="./img/C6633D6B-2977-43B6-AC7B-C9673052F6DB.png" alt=""> -->
-         <button class="fire-btn">Áll gud tú Bírthtall!</button>
-       <p></p>
-      </div>
+          <button class="fire-btn text">Happy<br>Birthday!</button>
+          <p class="btn-para text">(Click above)</p>
+        </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
     </button>
-  </div>
+</div>
 
-  <div class="main-container">
+<!--  <div class="main-container">
     <button class="fire-btn">Click Me!</button>
-  </div>
+</div> -->
+
+<script src="./script.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 
@@ -81,7 +83,7 @@
     const fireBtn = document.querySelector(".fire-btn");
 
     fireBtn.addEventListener("click", () => {
-        const duration = 10 * 800,
+        const duration = 10 * 1300,
   animationEnd = Date.now() + duration,
   defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
 
@@ -96,7 +98,7 @@ const interval = setInterval(function() {
     return clearInterval(interval);
   }
 
-  const particleCount = 50 * (timeLeft / duration);
+  const particleCount = 90 * (timeLeft / duration);
 
   // since particles fall down, start a bit higher than random
   confetti(
@@ -115,6 +117,18 @@ const interval = setInterval(function() {
     });
   </script>
 
+  <script>
+    const revealBtn = document.querySelector(".reveal-btn");
+    const overlay = document.querySelector(".overlay");
+
+    revealBtn.addEventListener("click", () => {
+        overlay.style.display = "block";
+    });
+
+    overlay.addEventListener("click", () => {
+        overlay.style.display = "none";
+    });
+  </script>
 <!--   <script>
     const fireBtn = document.querySelector(".fire-btn");
 
